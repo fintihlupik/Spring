@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 http://www.springframework.org/schema/beans/spring-beans.xsd
+		 http://www.springframework.org/schema/context
+		 http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- 	<bean id="vista" class="vista.BancoVistaImpl" init-method="iniciarAplicacion"> -->
+<!-- 		<property name="bancoNegocio" ref="neg"></property> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="neg" class="negocio.BancoNegocioImpl"> -->
+<!-- 		<constructor-arg type="persistencia.BancoDao" ref="cDao" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="cDao" class="persistencia.BancoDaoImpl"> @Respository -->
+<!-- 		<property name="dataSource" ref="ds"></property> @Autowired -->
+<!-- 	</bean> -->
+
+<!-- 	Para activar el @Autowired -->
+	<context:annotation-config />
+
+<!-- 	Le indicamos los paquetes donde buscar los @Component y sus especializaciones -->
+	<context:component-scan base-package="persistencia, negocio, vista" />
+	
+	<context:property-placeholder
+		location="classpath:bbdd.properties" />
+
+	<bean id="ds"
+		class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="url" value="${bbdd.url}" />
+		<property name="driverClassName" value="${bbdd.driver}" />
+		<property name="username" value="${bbdd.user}" />
+		<property name="password" value="${bbdd.pass}" />
+	</bean>
+	
+	<bean id="ds2"
+		class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="url" value="${bbdd.url}" />
+		<property name="driverClassName" value="${bbdd.driver}" />
+		<property name="username" value="${bbdd.user}" />
+		<property name="password" value="${bbdd.pass}" />
+	</bean>
+
+</beans>
+
