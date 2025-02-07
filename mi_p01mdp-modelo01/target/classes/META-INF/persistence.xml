@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="3.0"
+	xmlns="https://jakarta.ee/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence 
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+	<persistence-unit name="test"
+		transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="hibernate.show_sql" value="true" />
+
+			<property name="jakarta.persistence.jdbc.url"	value="jdbc:mysql://localhost:3399/medios_de_pago" />
+			<property name="jakarta.persistence.jdbc.user" value="root" />
+			<property name="jakarta.persistence.jdbc.password" value="root" />
+			<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
