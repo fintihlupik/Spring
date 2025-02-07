@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>es.cursosprhib</groupId>
+	<artifactId>p01mdpaspectos</artifactId>
+	<version>1</version>
+
+	<name>p01mdpaspectos</name>
+	<description>A simple p01mdp.</description>
+	<!-- FIXME change it to the project's website -->
+	<url>http://www.example.com</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>es.cursosprhib</groupId>
+			<artifactId>p01mdp-servicios</artifactId>
+			<version>1</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+		<dependency>
+			<groupId>jakarta.annotation</groupId>
+			<artifactId>jakarta.annotation-api</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aspects</artifactId>
+		    <version>6.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.11.4</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>es.cursosprhib.mediosdepago.inicio.Main</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>
