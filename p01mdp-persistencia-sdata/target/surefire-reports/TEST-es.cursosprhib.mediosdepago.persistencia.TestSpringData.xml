@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="es.cursosprhib.mediosdepago.persistencia.TestSpringData" time="1.692" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mananas/Downloads/p01mdp-persistencia-sdata/target/test-classes:/Users/mananas/Downloads/p01mdp-persistencia-sdata/target/classes:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.2/spring-boot-starter-data-jpa-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/mananas/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/mananas/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/mananas/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/mananas/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/mananas/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/mananas/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/mananas/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.2/spring-boot-starter-jdbc-3.4.2.jar:/Users/mananas/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/mananas/.m2/repository/org/springframework/spring-jdbc/6.2.2/spring-jdbc-6.2.2.jar:/Users/mananas/.m2/repository/org/hibernate/orm/hibernate-core/6.6.5.Final/hibernate-core-6.6.5.Final.jar:/Users/mananas/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/mananas/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/mananas/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/Users/mananas/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/Users/mananas/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/Users/mananas/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/mananas/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/mananas/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/mananas/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/mananas/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/mananas/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/mananas/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/mananas/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/mananas/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/mananas/.m2/repository/org/springframework/data/spring-data-jpa/3.4.2/spring-data-jpa-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-orm/6.2.2/spring-orm-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/mananas/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/mananas/.m2/repository/org/springframework/spring-aspects/6.2.2/spring-aspects-6.2.2.jar:/Users/mananas/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar:/Users/mananas/.m2/repository/es/cursosprhib/p01mdp-modelo/1/p01mdp-modelo-1.jar:/Users/mananas/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/mananas/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/mananas/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/mananas/.m2/repository/org/apache/commons/commons-dbcp2/2.12.0/commons-dbcp2-2.12.0.jar:/Users/mananas/.m2/repository/org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.jar:/Users/mananas/.m2/repository/com/mysql/mysql-connector-j/9.1.0/mysql-connector-j-9.1.0.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/mananas/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/mananas/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/mananas/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/mananas/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/mananas/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/mananas/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/mananas/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/mananas/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/mananas/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/mananas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mananas/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/mananas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/mananas/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/mananas/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/mananas/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/mananas/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/mananas/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/mananas/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/mananas/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/mananas/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/mananas/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="APPLICATION_NAME" value="p01mdp-persistencia-sdata"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mananas/Downloads/p01mdp-persistencia-sdata/target/surefire/surefirebooter-20250210133859031_3.jar /Users/mananas/Downloads/p01mdp-persistencia-sdata/target/surefire 2025-02-10T13-38-58_997-jvmRun1 surefire-20250210133859031_1tmp surefire_0-20250210133859031_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mananas/Downloads/p01mdp-persistencia-sdata/target/test-classes:/Users/mananas/Downloads/p01mdp-persistencia-sdata/target/classes:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.2/spring-boot-starter-data-jpa-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/mananas/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/mananas/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/mananas/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/mananas/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/mananas/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/mananas/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/mananas/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.2/spring-boot-starter-jdbc-3.4.2.jar:/Users/mananas/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/mananas/.m2/repository/org/springframework/spring-jdbc/6.2.2/spring-jdbc-6.2.2.jar:/Users/mananas/.m2/repository/org/hibernate/orm/hibernate-core/6.6.5.Final/hibernate-core-6.6.5.Final.jar:/Users/mananas/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/mananas/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/mananas/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/Users/mananas/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/Users/mananas/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/Users/mananas/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/mananas/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/mananas/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/mananas/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/mananas/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/mananas/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/mananas/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/mananas/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/mananas/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/mananas/.m2/repository/org/springframework/data/spring-data-jpa/3.4.2/spring-data-jpa-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-orm/6.2.2/spring-orm-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/mananas/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/mananas/.m2/repository/org/springframework/spring-aspects/6.2.2/spring-aspects-6.2.2.jar:/Users/mananas/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar:/Users/mananas/.m2/repository/es/cursosprhib/p01mdp-modelo/1/p01mdp-modelo-1.jar:/Users/mananas/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/mananas/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/mananas/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/mananas/.m2/repository/org/apache/commons/commons-dbcp2/2.12.0/commons-dbcp2-2.12.0.jar:/Users/mananas/.m2/repository/org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.jar:/Users/mananas/.m2/repository/com/mysql/mysql-connector-j/9.1.0/mysql-connector-j-9.1.0.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/mananas/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/mananas/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/mananas/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/mananas/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/mananas/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/mananas/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/mananas/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/mananas/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/mananas/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/mananas/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/mananas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mananas/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/mananas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/mananas/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/mananas/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/mananas/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/mananas/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/mananas/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/mananas/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/mananas/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/mananas/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/mananas/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/mananas/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/mananas/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mananas"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="/Users/mananas/Downloads/p01mdp-persistencia-sdata"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/Users/mananas/Downloads/p01mdp-persistencia-sdata/target/surefire/surefirebooter-20250210133859031_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="mananas"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/mananas/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/sh/dss7216d29v2y6v7qmnd545w0000gp/T/"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="/Users/mananas/Downloads/p01mdp-persistencia-sdata"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="7374"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mananas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[p01mdp-persistencia-sdata] "/>
+  </properties>
+  <testcase name="contextLoads" classname="es.cursosprhib.mediosdepago.persistencia.TestSpringData" time="0.305">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-02-10T13:38:59.399+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] e.c.m.persistencia.TestSpringData        : Starting TestSpringData using Java 17.0.12 with PID 7374 (started by mananas in /Users/mananas/Downloads/p01mdp-persistencia-sdata)
+2025-02-10T13:38:59.400+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] e.c.m.persistencia.TestSpringData        : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T13:38:59.488+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T13:38:59.507+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 6 JPA repository interfaces.
+2025-02-10T13:38:59.628+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T13:38:59.752+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73fbdf68
+2025-02-10T13:38:59.752+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T13:38:59.769+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T13:38:59.783+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T13:38:59.792+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T13:38:59.872+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T13:38:59.912+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T13:39:00.216+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T13:39:00.216+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T13:39:00.294+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T13:39:00.600+01:00  INFO 7374 --- [p01mdp-persistencia-sdata] [           main] e.c.m.persistencia.TestSpringData        : Started TestSpringData in 1.282 seconds (process running for 1.532)
+Optional[PersonaFisica [261, Encarnación, Escobar, Sánchez, 56295592X]]
+Optional[ES98 2100 5953 8887 7459 4950]
+PersonaFisica [253, Laura, Simón, Lorenzo, 32722044J]
+PersonaFisica [19, Roberto, Pérez, Corbacho, 99959236V]
+PersonaFisica [25, Ana Belén, López, García, 81268932L]
+PersonaFisica [40, María Carmen, Perdomo, Sánchez, 27216801G]
+PersonaFisica [72, Joaquín, Herreros, Felipe, 23193051N]
+PersonaFisica [80, Irene, López, Palomo, 13525176A]
+PersonaFisica [85, Ramón, López, Roselló, 62468425B]
+PersonaFisica [92, Alberto, Cobo, López, 46116898N]
+PersonaFisica [198, María, Cutillas, Pérez, 09297312E]
+PersonaFisica [324, Vicente, Mercado, Perea, 34258024F]
+PersonaFisica [346, Juan José, Romero, Pérez, 52788504P]
+PersonaFisica [351, Pedro, Martínez, Pérez, 04928220X]
+PersonaFisica [371, Ana María, Segui, Pellicer, 45005380S]
+PersonaFisica [381, María Pilar, Pérez, Granados, 99559044W]
+PersonaFisica [400, Enrique, Jiménez, Pérez, 62381182F]
+PersonaFisica [457, Álvaro, Gutiérrez, Peña, 47512413W]
+PersonaFisica [476, Javier, Ramírez, Pérez, 49857564G]
+PersonaFisica [643, Esperanza, Montserrat, Ibáñez, 96335774K]
+PersonaFisica [667, Mariano, López, González, 72049006B]
+PersonaFisica [706, Andrés, López, López, 99509658C]
+PersonaFisica [726, Teresa, Rubio, Pedraza, 06573267M]
+PersonaFisica [734, Silvia, Pérez, Contreras, 75848946Y]
+PersonaFisica [767, Antonio, Miralles, Peñalver, 35247731R]
+PersonaFisica [781, María Rosario, Torre, López, 76545503P]
+PersonaFisica [829, Francisco, Vázquez, López, 47318414P]
+PersonaFisica [858, Yolanda, Sáez, Pérez, 41436322M]
+PersonaFisica [871, Ana, Silvestre, Peñalver, 37466055K]
+PersonaFisica [899, Joaquín, Reyes, Pérez, 35539932X]
+PersonaFisica [932, María Luisa, Pérez, Rosa, 31881530B]
+PersonaFisica [952, Daniel, Arias, Peris, 25641737A]
+PersonaFisica [972, María Ángeles, Murcia, Pena, 09931878H]
+PersonaFisica [1001, Pablo, Lopez, , 123456789A]
+[ES06 0078 4941 1142 7264 1817, ES96 2105 6265 5666 6587 6401, ES42 2100 6114 6566 0029 0482]
+[ES58 3058 0901 1419 9917 2168, ES78 0130 5649 0107 7841 3291]
+]]></system-out>
+  </testcase>
+</testsuite>

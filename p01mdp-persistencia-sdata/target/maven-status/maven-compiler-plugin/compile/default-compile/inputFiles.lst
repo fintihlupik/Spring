@@ -1,0 +1,9 @@
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/config/PersistenciaConfig.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/ClienteDao.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/ClienteDaoCustom.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/ClienteDaoImpl.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/CuentaDao.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/ExtractoDao.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/MovimientoDao.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/TarjetaDao.java
+/Users/mananas/Downloads/p01mdp-persistencia-sdata/src/main/java/es/cursosprhib/mediosdepago/persistencia/TipoMovimientoDao.java
